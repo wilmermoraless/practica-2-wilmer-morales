@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+</head>
+<body>
+    <!--Realizar programa con la introduccion de la edad por parte del usuario. NO PERMITIR EDADES MENORES QUE 1 AÑO 
+    NI MAYORES QUE 120 AÑOS AÑOS. La computadora indica que "Si tiene permiso de acceso" si la edad es mayor que 18 años
+    -->
+    <script>
+      let edad = 0; 
+      let resultado;
+
+      edad = prompt("Ingrese su edad", "0");
+       // edad = parseInt(dato)
+       if((edad > 18) && (edad < 120))
+        {
+            resultado = "Si tiene permiso de acceso";
+        }
+     else
+     {
+        if((edad < 1) || (edad > 120))
+        {
+            resultado = "NO tiene permiso de acceso";
+        }
+        
+     }
+       document.write(`${resultado}`);
+      
+    </script>
+    
+</body>
+</html>
+
