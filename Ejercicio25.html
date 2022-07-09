@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+</head>
+<body>
+    <!--
+        Realizar programa en el que el usuario introduce el numero del mes (1 al 12) y
+        el codigo responde si ese mes tiene 30 0 31 dias.
+    -->
+    <script>
+     
+     let mes;
+
+     mes = prompt("Ingrese numero del mes", "1 al 12");
+     mes=parseInt(mes); 
+    
+    if (mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes ==10 || mes==12) 
+    { 
+    document.write('Este mes tiene 31 dias.'); 
+    } 
+    else 
+    { 
+    if (mes==2) 
+    document.write('Este mes tiene 28 dias.'); 
+    else 
+    document.write('Este mes tiene 30 dias.'); 
+    } 
+      
+    </script>
+    
+</body>
+</html>
+
