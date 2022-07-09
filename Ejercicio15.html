@@ -1,14 +1,34 @@
-inicio 
- num1 ←0: num2 ←0 
-Introducir "Introduce primer número";num1 
-Introducir "Introduce segundo número";num2 
-Si (num1>num2) 
- Escribir "El mayor es el primero ", num1 
-sino
- SI (num2>num1) 
-Escribir "El mayor es el segundo ", num2 
- sino 
-Escribir "Los números son iguales" 
- fin si
-fin si 
-Fin
+<!DOCTYPE html> 
+<html> 
+<head><meta charset="utf-8"></head> 
+ 
+<body> 
+ <!--Realizar programa: Introduccion de dos numeros y el ordenador indica cual es el mayor o
+sin son iguales-->
+ 
+    <script> 
+    let num1 =0, num2 =0;
+
+    num1 = prompt("Ingrese primer numero ", "0");
+    num2 = prompt("Ingrese segundo numero ", "0");
+    
+    if (num1 > num2)
+    {
+        document.write("El mayor es el primero "+ num1);
+    }
+    else
+    {
+         if (num2 > num1)
+        {
+            document.write("El mayor es el segundo "+ num2);
+        }
+        else
+     {
+        document.write("Los numeros son iguales ");
+     }
+    }
+
+    
+    </script>
+</body> 
+</html>
